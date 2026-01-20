@@ -1,0 +1,94 @@
+.timer-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer-card {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  width: 100%;
+  max-width: 340px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.timer-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+/* Timer value */
+.timer-display {
+  font-size: 68px;
+  font-weight: 700;
+  color: #ff3d00;
+  margin: 20px 0 30px;
+}
+
+/* Buttons wrapper */
+.timer-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Common button style */
+.timer-buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button colors */
+.start-btn {
+  background: #4caf50;
+  color: #fff;
+}
+
+.stop-btn {
+  background: #f44336;
+  color: #fff;
+}
+
+.reset-btn {
+  background: #ff9800;
+  color: #fff;
+}
+
+/* Hover & active effects */
+.timer-buttons button:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+.timer-buttons button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Small animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
